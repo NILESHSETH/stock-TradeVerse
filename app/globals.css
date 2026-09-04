@@ -163,6 +163,9 @@
   .auth-layout {
     @apply flex flex-col justify-between lg:flex-row h-screen bg-gray-900 relative overflow-hidden;
   }
+  /* .auth-layout {
+  @apply flex flex-col justify-between lg:flex-row min-h-screen bg-gray-900 relative overflow-y-auto;
+  } */
   .auth-logo {
     @apply pt-6 lg:pt-8 mb-8 lg:mb-12;
   }

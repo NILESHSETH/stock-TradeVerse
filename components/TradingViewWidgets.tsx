@@ -1,7 +1,7 @@
 // TradingViewWidget.js'x
 'use client'
 import React, {useRef, memo } from 'react';
-import useTradingViewWidget from './hooks/useTradingViewWidgets';
+import useTradingViewWidget from '@/components/hooks/useTradingViewWidget';
 import {cn} from "@/lib/utils";
 
 interface TradingViewWidgetProps {
@@ -14,7 +14,7 @@ interface TradingViewWidgetProps {
 
 
 const TradingViewWidget = ({title, scriptUrl, config, height = 600, className}: TradingViewWidgetProps) => {
-  const container = useTradingViewWidget(scriptUrl, config, height);
+//   const container = useTradingViewWidget(scriptUrl, config, height);
 
   // this useeffect can be used a resulabe hook for the tradingview widget in the future if we want to use it in other components..whenever we try to render diffrent chart we can use this hook to render the chart in diffrent components
     const containerRef = useTradingViewWidget(scriptUrl, config, height);
